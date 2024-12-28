@@ -113,6 +113,19 @@
 </style>
 
 
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dialogflow Bot Integration</title>
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <style>
+        df-messenger {
+            --df-messenger-bot-message: #4285f4;
+            --df-messenger-button-titlebar-color: #4285f4;
+            --df-messenger-chat-background-color: #ffffff;
+        }
+    </style>
+
+
   </head>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 	  
@@ -630,6 +643,12 @@
   <script src="js/main.js"></script>
     
 
-  <iframe height="430" width="350" src="https://bot.dialogflow.com/2924732e-da70-4f43-a0e3-0188daec48d9"></iframe>
+  <!-- Dialogflow Messenger Integration -->
+  <df-messenger
+  intent="WELCOME"
+  chat-title="My Chatbot"
+  agent-id="2924732e-da70-4f43-a0e3-0188daec48d9"
+  language-code="en">
+</df-messenger>
   </body>
 </html>
